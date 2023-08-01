@@ -1,0 +1,398 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap%27);
+
+/* Override UGG site */
+#main {
+    width: 100%;
+    padding: 0;
+}
+
+.content-asset p {
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+#parallax-world-of-ugg {
+    scroll-behavior: smooth;
+}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+.margin-bot-10 {
+    padding-bottom: 10px;
+}
+
+/* Typography */
+/**************************/
+
+#parallax-world-of-ugg h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    z-index: 10;
+    opacity: .9;
+}
+
+#parallax-world-of-ugg p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+    background: white;
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    max-height: 240px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* OUR SERVICES TITLE */
+
+#ourservices h2 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Handlee', cursive;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+#ourservices span {
+    color: var(--colorSecundario);
+}
+
+.underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorSecundario);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.underline hr {
+    border-color: var(--colorSecundario);
+    position: absolute;
+    width: 100%;
+    top: -4px;
+    border-width: 2px;
+}
+
+.underline span {
+    text-align: center;
+    display: block;
+}
+
+/* OUR SERVICES */
+
+#ourservices .grid {
+    display: grid;
+    grid-column: 1fr;
+    gap: 1em;
+}
+
+#ourservices article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+#ourservices article:last-child {
+    border-bottom: 0px;
+}
+
+#ourservices article i {
+    color: var(--colorSecundario);
+    font-size: 140%;
+    border: 1px solid var(--colorSecundario);
+    display: inline-block;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#ourservices h3 {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 110%;
+}
+
+#ourservices p {
+    color: #777;
+    margin-bottom: 0.5em;
+}
+
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+    background: white;
+    padding: 60px;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#parallax-world-of-ugg .block .first-character {
+    float: left;
+    font-size: 100px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    font-family: 'Handlee', cursive;
+    color: var(--colorSecundario);
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1415018255745-0ec3f7aee47b?dpr=1&auto=format&fit=crop&w=1500&h=938&q=80&cs=tinysrgb&crop=);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#parallax-world-of-ugg .parallax-two {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1448043552756-e747b7a2b2b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1052&q=80);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-three {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* OUR MISSION */
+
+#ourmission .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#ourmission p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+}
+
+#ourmission .marco {
+    border: 3px solid var(--colorSecundario);
+    transform: rotateZ(10deg);
+    width: 95%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+#ourmission .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+#ourmission figure:hover :is(.marco, img) {
+    transform: rotateZ(0deg);
+}
+
+#ourmission hr {
+    width: 16.25em;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+
+#ourmission h4 {
+    font-family: 'Handlee', cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#ourmission .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#ourmission .boton .btn {
+    width: 100px;
+}
+
+/* FLECHA */
+
+.flecha a {
+    display: block;
+    color: var(--colorSecundario);
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    font-size: 250%;
+    display: flex;
+    text-decoration: none;
+    justify-content: right;
+}
+
+.flecha i {
+    padding-right: 10px;
+}
+
+/* Media Queries */
+/**************************/
+
+@media(min-width: 960px) {
+    #ourservices .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #ourservices article:last-child {
+        grid-column: 3/4;
+    }
+
+    #ourservices article {
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding-left: 1.5em;
+    }
+
+    #parallax-world-of-ugg .block {
+        width: 1000px;
+    }
+
+    #ourmission .flex {
+        flex-direction: row;
+    }
+
+    #ourmission p,
+    h4 {
+        padding-left: 30px;
+    }
+
+    #ourmission .boton {
+        padding-left: 30px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    #parallax-world-of-ugg .block {
+        width: 800px;
+    }
+
+    #ourservices .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #ourservices article:last-child {
+        grid-column: 3/4;
+    }
+
+    #ourservices article {
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding-left: 1.5em;
+    }
+
+    #ourservices h2 {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #ourmission .flex {
+        flex-direction: row;
+    }
+
+    #ourmission p,
+    h4 {
+        padding-left: 30px;
+    }
+
+    #ourmission .boton {
+        padding-left: 30px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #parallax-world-of-ugg .block {
+        padding: 30px;
+        width: 420px;
+    }
+
+    #parallax-world-of-ugg h2 {
+        font-size: 30px;
+    }
+
+    #parallax-world-of-ugg .block {
+        padding: 30px;
+    }
+
+    #parallax-world-of-ugg .parallax-one,
+    #parallax-world-of-ugg .parallax-two,
+    #parallax-world-of-ugg .parallax-three {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #parallax-world-of-ugg .block {
+        padding: 30px 15px;
+        width: 290px;
+    }
+
+    #ourservices h2 {
+        color: black;
+        font-size: 30px;
+    }
+
+    #ourmission hr {
+        display: none;
+    }
+}

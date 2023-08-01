@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* inicio section ourblog */
+
+main {
+    padding-top: 100px;
+}
+
+/* POST TITLE */
+
+#post .titulo h2 {
+    color: black;
+    font-size: 30px;
+    font-family: 'Handlee', cursive;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#post .titulo span {
+    color: var(--colorSecundario);
+}
+
+.underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorSecundario);
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.underline hr {
+    border-color: var(--colorSecundario);
+    position: absolute;
+    width: 100%;
+    top: -4px;
+    border-width: 2px;
+}
+
+.underline span {
+    text-align: center;
+    display: block;
+}
+
+/* POSTVIEW */
+
+.postView {
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.postView img {
+    border-radius: 50px;
+    opacity: 1;
+    transition: 0.7s ease;
+}
+
+.postView img:hover {
+    opacity: 0.6;
+}
+
+.postView h1 {
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 0.2em;
+    padding-top: 1em;
+}
+
+.postView h2 {
+    font-family: 'Handlee', cursive;
+    color: var(--colorSecundario);
+    font-size: small;
+    padding-bottom: 1em;
+}
+
+.postView h5 {
+    padding-bottom: 1.5em;
+    font-family: 'Handlee', cursive;
+    font-size: small;
+}
+
+.postView p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    text-align: justify;
+    padding-bottom: 3em;
+}
+
+/* FLECHA */
+
+.flecha {
+    display: block;
+    color: var(--colorSecundario);
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    font-size: 250%;
+    display: flex;
+    text-decoration: none;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.flecha i {
+    padding-right: 10px;
+}
+
+/* medias querys */
+
+@media(min-width: 960px) {
+    .postView .imagen {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    .postView .imagen {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {}
