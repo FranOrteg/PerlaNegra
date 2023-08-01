@@ -1,0 +1,68 @@
+/* VARIABLES */
+:root {
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'Montserrat', sans-serif;
+    --colorPrincipal: #21242e;
+    --colorSecundario: #10d4f7;
+    --fontsize: 1em
+}
+
+/* HEADER */
+.navbar-nav {
+    width: 100%;
+    justify-content: end;
+}
+
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+header {
+    background-color: var(--colorPrincipal);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: var(--colorSecundario);
+}
+
+.navbar a span {
+    color: var(--colorSecundario);
+}
+
+.navbar button {
+    border: 1px solid white;
+}
+
+.navbar .hamburguesa div {
+    border: 1px solid white;
+    width: 1em;
+    margin-bottom: 0.325em;
+}
+
+.navbar .hamburguesa div:nth-child(1) {
+    margin-top: 0.25em;
+}
+
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    transition: .1s;
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+    color: var(--colorSecundario);
+}
+
+/* HEADER */

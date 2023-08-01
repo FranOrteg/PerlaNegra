@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isCollapsed: boolean
 
+  constructor() {
+    this.isCollapsed = true
+  }
+
+
+  cerrar() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }
+

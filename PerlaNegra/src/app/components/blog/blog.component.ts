@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Post } from 'src/app/interfaces/post.interface';
+import { PostService } from 'src/app/services/post.service';
 
 @Component({
   selector: 'app-blog',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
+  arrPosts: Post[];
 
+  constructor(private postService: PostService) {
+    this.arrPosts = []
+  }
+
+  ngOnInit() {
+    this.arrPosts = this.postService.getAll()
+    console.log(this.arrPosts)
+  }
 }

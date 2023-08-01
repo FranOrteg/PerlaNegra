@@ -1,0 +1,422 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+
+/* HERO */
+.hero {
+    height: 60vh;
+    background-color: black;
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding-top: 3.5em;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+/* ABOUT US TITTLE*/
+
+#aboutus h2 {
+    color: black;
+    font-size: 30px;
+    font-family: 'Handlee', cursive;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#aboutus span {
+    color: var(--colorSecundario);
+}
+
+.underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorSecundario);
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.underline hr {
+    border-color: var(--colorSecundario);
+    position: absolute;
+    width: 100%;
+    top: -4px;
+    border-width: 2px;
+}
+
+.underline span {
+    text-align: center;
+    display: block;
+}
+
+/* ABOUT US CONTENT */
+
+#history h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+#history p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.aboutusFoto {
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+.first-character {
+    float: left;
+    font-size: 90px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    font-family: 'Handlee', cursive;
+    color: var(--colorSecundario);
+}
+
+/* ABOUT US LOGROS */
+
+#logros {
+    background-color: #F2F5F9;
+}
+
+.logros {
+    margin-top: 2em;
+}
+
+#logros h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#logros p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#logros .underline {
+    margin: 0 auto;
+    padding: 0;
+    width: 6.25em;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+
+.logrosGrid hr {
+    margin: 0 auto;
+    padding: 0;
+    width: 6.25em;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+
+
+
+/* LOGROS GRID */
+
+#logros .logrosGrid {
+    display: grid;
+    grid-column: 1fr;
+    gap: 1em;
+}
+
+
+#logros article:last-child {
+    padding-bottom: 3em;
+}
+
+
+#logros h3 {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    font-family: 'Oswald', sans-serif;
+}
+
+#logros p {
+    color: #777;
+    margin-bottom: 1em;
+}
+
+/* FOTO */
+#aboutLast .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#aboutLast p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+}
+
+#aboutLast .marco {
+    border: 3px solid var(--colorSecundario);
+    transform: rotateZ(10deg);
+    width: 95%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+#aboutLast .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+#aboutLast figure:hover :is(.marco, img) {
+    transform: rotateZ(0deg);
+}
+
+#aboutLast hr {
+    width: 16.25em;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+
+#aboutLast h4 {
+    font-family: 'Handlee', cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#aboutLast .block {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 2em;
+}
+
+.social {
+    position: absolute;
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 3em;
+}
+
+.redes {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.social a {
+    color: var(--colorSecundario);
+}
+
+/* FLECHA */
+
+.flecha a {
+    display: block;
+    color: var(--colorSecundario);
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    font-size: 250%;
+    display: flex;
+    text-decoration: none;
+    justify-content: right;
+}
+
+.flecha i {
+    padding-right: 10px;
+}
+
+/* MEDIAS QUERIES */
+
+@media(min-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #history h2 {
+        justify-content: start;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+
+    .history {
+        width: 1600px;
+    }
+
+    #aboutus h2 {
+        font-size: 40px;
+    }
+
+    .logros {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #logros h2 {
+        width: 50%;
+        padding-bottom: 1em;
+        padding-top: 2em;
+    }
+
+    #logros .logros p {
+        width: 50%;
+        padding-top: 2em;
+    }
+
+    #logros .logrosGrid {
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 3em;
+    }
+
+    #logros article {
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+    }
+
+    #logros article:last-child {
+        grid-column: 3/4;
+    }
+
+    #logros article:first-child {
+        border-left: none;
+    }
+
+    #logros .logrosGrid p {
+        width: 100%;
+    }
+
+    .hr {
+        display: none;
+    }
+
+    #logros hr {
+        padding-bottom: 0;
+    }
+
+    #aboutLast .flex {
+        flex-direction: row;
+    }
+
+    #aboutLast p,
+    h4 {
+        padding-left: 30px;
+    }
+
+    .redes {
+        justify-content: start;
+        padding-left: 30px;
+    }
+
+    #aboutLast .marco {
+        width: 75%;
+    }
+
+    #aboutLast .texto {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    .aboutusFoto {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 3em;
+        margin-top: 2em;
+    }
+
+    #aboutLast .flex {
+        flex-direction: row;
+    }
+
+    #aboutLast p,
+    h4 {
+        padding-left: 30px;
+    }
+
+    .redes {
+        justify-content: start;
+        padding-left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #aboutLast .marco {
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 479px) {}

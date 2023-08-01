@@ -1,1 +1,33 @@
-<p>blog works!</p>
+<main>
+    <section id="ourblog">
+        <div class="container">
+            <h2>Our <span>Blog</span></h2>
+            <div class="underline">
+                <hr noshade="noshade">
+                <span>X</span>
+            </div>
+            <div class="grid">
+                <article *ngFor="let post of arrPosts" [routerLink]="['/post', post.id]">
+                    <figure>
+                        <img [src]=post.imagen alt="plato">
+                        <div class="fecha">
+                            <p>{{post.fecha}}</p>
+                        </div>
+                    </figure>
+                    <div class="text">
+                        <h3>{{post.titulo}}</h3>
+                        <h4>{{post.autor}}</h4>
+                        <p>{{post.textoMiniatura}}</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="flecha">
+        <a href="../blog#top">
+            <i class="fas fa-caret-square-up"></i>
+        </a>
+    </div>
+</main>
