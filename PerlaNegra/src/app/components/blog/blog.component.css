@@ -5,6 +5,7 @@
 
 main {
     padding-top: 100px;
+    padding-bottom: 70px;
 }
 
 main #ourblog .grid {
@@ -83,13 +84,16 @@ main #ourblog .grid article {
         -20px -20px 60px #ffffff;
 }
 
-main #ourblog .grid img {
+main #ourblog .grid figure {
     transition: transform 0.1s ease;
+}
+
+main #ourblog .grid img {
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
 }
 
-main #ourblog .grid img:hover {
+main #ourblog .grid figure:hover {
     transform: scale(1.1);
 }
 
@@ -168,4 +172,9 @@ main #ourblog .grid img:hover {
     }
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    main {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+}

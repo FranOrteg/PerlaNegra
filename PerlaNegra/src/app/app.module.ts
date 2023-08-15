@@ -11,6 +11,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PostComponent } from './components/post/post.component';
+import { HttpClientModule } from '@angular/common/http'
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule, NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { PostComponent } from './components/post/post.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    NgbModule,
+    NgbToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]

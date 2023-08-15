@@ -1,1 +1,110 @@
-<p>contact works!</p>
+<div class="container">
+    <div class="form">
+        <section id="contact">
+            <h2>Contact <span>Us</span></h2>
+            <div class="underline">
+                <hr noshade="noshade">
+                <span class="pb-4">X</span>
+            </div>
+        </section>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <input type="text" class="form-control" id="form-area" placeholder="Full Name"
+                        formControlName="name">
+
+                    <p class="error" *ngIf="checkError('name', 'required')">Name is required</p>
+                </div>
+                <div class="mb-3 col-6">
+                    <input type="text" class="form-control" id="form-area" placeholder="Email" formControlName="email">
+
+                    <p class="error" *ngIf="checkError('email', 'required')">Email is required</p>
+                    <p class="error" *ngIf="checkError('email', 'pattern')">Email has an incorrect format</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <input type="text" class="form-control" id="form-area" placeholder="Mobile Number"
+                        formControlName="mobile">
+
+                    <p class="error" *ngIf="checkError('mobile', 'required')">Mobile Number is required</p>
+                </div>
+                <div class="mb-3 col-6">
+                    <input type="text" class="form-control" id="form-area" placeholder="Email Subject"
+                        formControlName="subject">
+
+                    <p class="error" *ngIf="checkError('subject', 'required')">Email Subject is required</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Your Message" cols="30" rows="10"
+                    formControlName="message"></textarea>
+
+                <p class="error" *ngIf="checkError('message', 'required')">Your Message is required</p>
+            </div>
+
+            <div class="btn-box">
+                <button class="btn btn-info">Send Message</button>
+            </div>
+
+            <div>
+                <ngb-toast class="toast" *ngIf="show" header="Thank's  for Contact" [autohide]="false"
+                    (hidden)="show=false">
+                    I'll answer as soon as possible.
+                </ngb-toast>
+            </div>
+
+            <div>
+                <ngb-toast class="toast" *ngIf="showError" header="Not contact yet" [autohide]="false"
+                    (hidden)="show=false">
+                    All fields are required.
+                </ngb-toast>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<section id="mapas">
+    <div class="map">
+        <h3>La Perla Negra</h3>
+        <figure>
+            <div class="marco">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.4904533784143!2d-3.5375309235819494!3d40.35364817144981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd423b993a524491%3A0xc6c46660087a187d!2sLa%20Perla%20Negra!5e0!3m2!1ses!2ses!4v1691168301627!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </figure>
+
+        <div>
+            <p>Avenida María Zambrano Número 3</p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Martes 🔹 Sabado</th>
+                        <th scope="col">Domingo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Mañana</th>
+                        <td>11:00 - 16:00</td>
+                        <td>11:00 - 16:00</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Noche</th>
+                        <td>19:30 - 12:00</td>
+                        <td class="cerrado">Cerrado</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
